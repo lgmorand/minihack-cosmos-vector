@@ -119,6 +119,15 @@ To create the necessary Azure resources for this lab:
     ```powershell
     ./create-azure-resources.ps1
     ```
+<div class="info" data-title="Note">
+
+> If you encounter any errors while executing the script locally, you might need to change the execution policy for PowerShell scripts. Run the following command in the integrated terminal to allow script execution:
+> ```powershell
+> Set-ExecutionPolicy Unrestricted
+> ```
+
+</div>
+    
 
 3. Copy and save the environment variables returned by the script in case you need them later. You can verify the resources created in the Azure portal.
 
