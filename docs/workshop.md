@@ -128,6 +128,11 @@ To create the necessary Azure resources for this lab:
 
 </div>
     
+<div class="info" data-title="Note">
+
+> The deployment of resources can take more than 10 minutes. Please be patient and wait for the script to complete.
+
+</div>
 
 3. Copy and save the environment variables returned by the script in case you need them later. You can verify the resources created in the Azure portal.
 
