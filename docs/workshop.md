@@ -805,7 +805,6 @@ python load-and-vectorize-data.py
 ```powershell
 cd ./node.js
 npm install
-npm install openai
 npm start
 ```
 
