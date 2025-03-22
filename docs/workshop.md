@@ -786,6 +786,8 @@ After completing the setup and configuration steps, you're now ready to explore 
   
 1. **Launch the Application**: Navigate to the root directory of your project in the integrated terminal within Visual Studio Code. To start the application, enter the following commands.
 
+To run the application, ensure you have either **Python** or **Node.js** installed locally. Alternatively, you can use the provided **devcontainer** for a pre-configured environment (ensure docker is installed and running). By default, **Python** is enabled in the devcontainer. If you wish to use **Node.js** instead, comment out the Python section and uncomment the Node.js section in the **./.devcontainer/devcontainer.json** configuration file.
+
 <details>
 <summary>Python</summary>
 
