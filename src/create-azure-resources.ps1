@@ -202,7 +202,7 @@ if (! $skipCreatingAzureOpenAIAccount) {
     }
 }
 
-$OpenAIDeploymentName = if ($OpenAIDeploymentName) { $OpenAIDeploymentName } elseif ($useEnvFile -and $envVars['OpenAIDeploymentName']) { $envVars['OpenAIDeploymentName'] } else { "lab-account-openai-deployment-$randomIdentifier" }
+$OpenAIDeploymentName = if ($OpenAIDeploymentName) { $OpenAIDeploymentName } elseif ($useEnvFile -and $envVars['OpenAIDeploymentName']) { $envVars['OpenAIDeploymentName'] } else { "lab-account-openai-deployment" }
 $OpenAIDeploymentModel = if ($OpenAIDeploymentModel) { $OpenAIDeploymentModel } elseif ($useEnvFile -and $envVars['OpenAIDeploymentModel']) { $envVars['OpenAIDeploymentModel'] } else { "text-embedding-ada-002" }
 $OpenAIDeploymentModelFormat = if ($useEnvFile -and $envVars['OpenAIDeploymentModelFormat']) { $envVars['OpenAIDeploymentModelFormat'] } else { "OpenAI" }
 $OpenAIDeploymentModelVersion = if ($OpenAIDeploymentModelVersion) { $OpenAIDeploymentModelVersion } elseif ($useEnvFile -and $envVars['OpenAIDeploymentModelVersion']) { $envVars['OpenAIDeploymentModelVersion'] } else { "2" }
@@ -227,7 +227,7 @@ if (! $skipCreatingAzureOpenAIDeployment) {
     }
 }
 
-$OpenAICompletionDeploymentName = if ($OpenAICompletionDeploymentName) { $OpenAICompletionDeploymentName } elseif ($useEnvFile -and $envVars['OpenAICompletionDeploymentName']) { $envVars['OpenAICompletionDeploymentName'] } else { "lab-account-openai-completion-$randomIdentifier" }
+$OpenAICompletionDeploymentName = if ($OpenAICompletionDeploymentName) { $OpenAICompletionDeploymentName } elseif ($useEnvFile -and $envVars['OpenAICompletionDeploymentName']) { $envVars['OpenAICompletionDeploymentName'] } else { "lab-account-openai-completion" }
 $OpenAICompletionDeploymentModel = if ($OpenAICompletionDeploymentModel) { $OpenAICompletionDeploymentModel } elseif ($useEnvFile -and $envVars['OpenAICompletionDeploymentModel']) { $envVars['OpenAICompletionDeploymentModel'] } else { "gpt-4o" }
 $OpenAICompletionDeploymentModelFormat = if ($useEnvFile -and $envVars['OpenAICompletionDeploymentModelFormat']) { $envVars['OpenAICompletionDeploymentModelFormat'] } else { "OpenAI" }
 $OpenAICompletionDeploymentModelVersion = if ($OpenAICompletionDeploymentModelVersion) { $OpenAICompletionDeploymentModelVersion } elseif ($useEnvFile -and $envVars['OpenAICompletionDeploymentModelVersion']) { $envVars['OpenAICompletionDeploymentModelVersion'] } else { "2024-08-06" }

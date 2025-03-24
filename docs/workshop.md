@@ -150,6 +150,12 @@ To create the necessary Azure resources for this lab:
 
 Once the resources are created and your **.env** file is populated with the resource information, you can proceed to the next step.
 
+<div class="warning" data-title="Warning">
+
+> During the Bengaluru Openhack, you will **not** use your own OpenAI endpoint due to quotas limitations (except if you are using your own subcription). You will have to use and replace inside the .env file some parameters with values provided by your coach.
+
+
+</div>
 ---
 
 ## Implement a vector search

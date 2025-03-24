@@ -57,7 +57,7 @@ The script accepts several parameters to customize the deployment process. The f
 
 | Parameter Name | Data Type | Mandatory | Default Value | Description |
 |----------------|-----------|-----------|---------------|-------------|
-| **OpenAIDeploymentName** | string | No | "lab-account-openai-deployment-$randomIdentifier" | The name of the Azure OpenAI deployment. Generated using a random identifier if not specified. |
+| **OpenAIDeploymentName** | string | No | "lab-account-openai-deployment" | The name of the Azure OpenAI deployment. Generated using a random identifier if not specified. |
 | **OpenAIDeploymentModel** | string | No | "text-embedding-ada-002" | The model name for the Azure OpenAI deployment. Defaults to "text-embedding-ada-002" if not specified. |
 | **OpenAIDeploymentModelVersion** | string | No | "2" | The model version for the Azure OpenAI deployment. Defaults to "2" if not specified. |
 | **OpenAIDeploymentSKU** | String | No | "Standard" | The SKU for the Azure OpenAI deployment. |
@@ -67,7 +67,7 @@ The script accepts several parameters to customize the deployment process. The f
 
 | Parameter Name | Data Type | Mandatory | Default Value | Description |
 |----------------|-----------|-----------|---------------|-------------|
-| **OpenAICompletionDeploymentName** | string | No | "labs-account-openai-completion-$randomIdentifier" | The name of the Azure OpenAI completion deployment. Generated using a random identifier if not specified. |
+| **OpenAICompletionDeploymentName** | string | No | "labs-account-openai-completion" | The name of the Azure OpenAI completion deployment. Generated using a random identifier if not specified. |
 | **OpenAICompletionDeploymentModel** | string | No | "gpt-4o" | The model name for the Azure OpenAI completion deployment. Defaults to "gpt-4o" if not specified. |
 | **OpenAICompletionDeploymentModelVersion** | string | No | "0301" | The model version for the Azure OpenAI completion deployment. Defaults to "0301" if not specified. |
 | **OpenAICompletionDeploymentSKU** | String | No | "Standard" | The SKU for the Azure OpenAI completion deployment. |
