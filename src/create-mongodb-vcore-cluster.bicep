@@ -1,6 +1,6 @@
 @description('Azure Cosmos DB MongoDB vCore cluster name')
 @maxLength(40)
-param clusterName string = '' //= 'msdocs-${uniqueString(resourceGroup().id)}'
+param clusterName string = '' //= 'lab-${uniqueString(resourceGroup().id)}'
 
 @description('Location for the cluster.')
 param dblocation string = ''

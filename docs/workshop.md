@@ -65,21 +65,19 @@ You can create these resources via the *Azure portal* or use the ***create-azure
 
 ### Use the .env file
 
-*This file must either be populated manually, or by the create-azure-resources.ps1 script before you can run your application, since it contains the connection information to your Azure resources.*
+*This file must either be populated **manually**, or by the create-azure-resources.ps1 script before you can run your application, since it contains the connection information to your Azure resources.*
+
+<div class="info" data-title="Note">
+
+> To learn more about the ***.env*** file and its parameters, review the [***.env*** file documentation](https://github.com/lgmorand/minihack-cosmos-vector/blob/main/docs/envfile.md).
+
+</div>
 
 This file is both used to retrieve and store the necessary environment variables for both the PowerShell script and the vector search application APIs. It's the easiest way to prepopulate your resource information. The file is used to store the environment variables for your vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI account.
 
 If you already have an existing Resource Group, a vCore-based Azure Cosmos DB for MongoDB account, or an Azure OpenAI account that you would like to use, just fill in those values in the .env file and set the skip create option for that resource to **true**. By default, the *create-azure-resources.ps1* script uses this file to retrieve the necessary environment variables. The *create-azure-resources.ps1* script populates the environment variables with default values if not specified in the .env file.
 
-To learn more about the ***.env*** file and its parameters, review the [***.env*** file documentation](https://github.com/lgmorand/minihack-cosmos-vector/blob/main/docs/envfile.md).
-
 ### Use the create-azure-resources.ps1 script
-
-<div class="info" data-title="Note">
-
-> You don't need to run the *create-azure-resources.ps1* script and can skip to the next section if you already have the necessary Azure resources created.
-
-</div>
 
 If you aren't using existing resources, or you aren't creating them through the Azure portal, this script creates the necessary Azure resources for this lab. It gives you the flexibility to create some or all of the resources required for this lab. You can either run the script as is or modify it to suit your needs. The resources created by the script include:
 
@@ -101,7 +99,7 @@ To learn more about the PowerShell script and its parameters, review the [***cre
 
 <div class="info" data-title="Note">
 
-> Make sure the tenant, location and subscription you use allows for the creation of the necessary resources. Not all locations and subscriptions might allow or support the creation of all the required resources needed for this lab. If you encounter any issues, please reach out to your Azure Administrator.
+> Ensure that the tenant, location, and subscription you are utilizing permit the establishment of the requisite resources. It is important to note that not all locations and subscriptions may allow or support the creation of all the necessary resources for this laboratory. Should you experience any difficulties, kindly contact your Azure Administrator.
 
 </div>
 
