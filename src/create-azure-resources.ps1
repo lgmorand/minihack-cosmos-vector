@@ -93,7 +93,7 @@ if ($changeSubscription) {
 }
 
 # Set the resource group
-$resourceGroup = if ($resourceGroup) { $resourceGroup } elseif ($useEnvFile -and $envVars['resourceGroup']) { $envVars['resourceGroup'] } else { "lab-cosmosdb-rg-$randomIdentifier" }
+$resourceGroup = if ($resourceGroup) { $resourceGroup } elseif ($useEnvFile -and $envVars['resourceGroup']) { $envVars['resourceGroup'] } else { "lab-rg-$randomIdentifier" }
 
 # Create a resource group
 if (! $skipCreatingResourceGroup) {
