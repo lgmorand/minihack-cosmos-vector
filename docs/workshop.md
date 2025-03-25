@@ -61,11 +61,9 @@ To support your AI copilot, you need access to the following Azure resources for
 - vCore-based Azure Cosmos DB for MongoDB account
 - Azure OpenAI account, including deployments for embeddings and completions
 
-You can create these resources via the *Azure portal* or use the ***create-azure-resources.ps1*** PowerShell script with the ***.env*** file. Don't use existing production resources for this lab or any lab.
+You will use the ***create-azure-resources.ps1*** PowerShell script with the ***.env*** file. Don't use existing production resources for this lab or any lab.
 
-### Use the .env file
-
-*This file must either be populated **manually**, or by the create-azure-resources.ps1 script before you can run your application, since it contains the connection information to your Azure resources.*
+### Understand the .env file
 
 <div class="info" data-title="Note">
 
@@ -75,11 +73,11 @@ You can create these resources via the *Azure portal* or use the ***create-azure
 
 This file is both used to retrieve and store the necessary environment variables for both the PowerShell script and the vector search application APIs. It's the easiest way to prepopulate your resource information. The file is used to store the environment variables for your vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI account.
 
-If you already have an existing Resource Group, a vCore-based Azure Cosmos DB for MongoDB account, or an Azure OpenAI account that you would like to use, just fill in those values in the .env file and set the skip create option for that resource to **true**. By default, the *create-azure-resources.ps1* script uses this file to retrieve the necessary environment variables. The *create-azure-resources.ps1* script populates the environment variables with default values if not specified in the .env file.
+*create-azure-resources.ps1* script populates the environment variables with default values if not specified in the .env file.
 
 ### Use the create-azure-resources.ps1 script
 
-If you aren't using existing resources, or you aren't creating them through the Azure portal, this script creates the necessary Azure resources for this lab. It gives you the flexibility to create some or all of the resources required for this lab. You can either run the script as is or modify it to suit your needs. The resources created by the script include:
+This script creates the necessary Azure resources for this lab. It gives you the flexibility to create some or all of the resources required for this lab. You can either run the script as is or modify it to suit your needs. The resources created by the script include:
 
 - a Resource Group
 - vCore-based Azure Cosmos DB for MongoDB account
@@ -88,12 +86,6 @@ If you aren't using existing resources, or you aren't creating them through the 
 - Azure OpenAI deployments for completions
 
 The script has a rich set of parameters to help you customize the resources to be created. It also uses an ***.env*** file to retrieve and store the necessary environment variables for both the PowerShell script and the vector search application APIs.  
-
-<div class="info" data-title="Note">
-
-> While these parameters can be passed directly to the script, *we recommend you use the ***.env*** file to prepopulate your resource information instead of adding the parameters when executing the script. This will make it easier for you to manage your environment variables.*
-
-</div>
 
 To learn more about the PowerShell script and its parameters, review the [***create-azure-resources.ps1*** documentation](https://github.com/lgmorand/minihack-cosmos-vector/blob/main/docs/powershell-script.md).
 
