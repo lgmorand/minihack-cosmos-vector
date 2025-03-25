@@ -62,7 +62,7 @@ To retrieve the lab content :
 
 </div>
 
-[fork-repo]: https://github.com/lgmorand/minihack-cosmos-vector/fork
+[fork-repo]:https://github.com/lgmorand/minihack-cosmos-vector/fork
 
 ### 🥇 : Pre-configured GitHub Codespace
 
