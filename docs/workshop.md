@@ -85,7 +85,7 @@ To get your codespace ready for the labs, here are a few steps to execute :
 
 ![codespace-configure](./assets/codespace-configure.png)
 
-[github-account]: https://github.com/join
+[github-account]:https://github.com/join
 
 ### 🥈 : Using a local Devcontainer
 
