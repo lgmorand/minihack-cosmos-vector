@@ -221,6 +221,12 @@ Once the resources are created and your **.env** file is populated with the reso
 
 > During the Bengaluru Openhack, you will **not** use your own OpenAI endpoint due to quotas limitations (except if you are **using your own subcription**). You will have to use and replace inside the .env file some parameters with values provided by your coach.
 
+For instance, try to replace with these two values:
+``` yaml
+OpenAIEndpoint="https://india-hack-2025.azure-api.net/openai"
+OpenAIKey1="LGIsTheBestWeLoveHisShirts"
+```
+
 </div>
 
 ---
